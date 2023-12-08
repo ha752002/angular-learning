@@ -1,0 +1,7 @@
+<ng-template
+  ngFor
+  [ngForOf]="userList"
+  let-user
+>
+  <app-info-detail (deleteUser)="deleteUser($event)"  [user]="user"></app-info-detail>
+</ng-template>
