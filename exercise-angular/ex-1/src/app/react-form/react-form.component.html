@@ -1,0 +1,11 @@
+
+<ng-template [ngIf]="isShow">
+  <div class="react-group" (mouseover)="isShow = true">
+    <button
+      *ngFor="let react of reactList"
+      (click)="handleClickReact(react.type)"
+    >
+      {{react.type}}
+    </button>
+  </div>
+</ng-template>

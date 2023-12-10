@@ -1,0 +1,4 @@
+<div (mouseover)="reactForm.isShow = true"  (mouseleave)="reactForm.isShow = false" [style.display]="'inline-block'">
+  <app-react-form #reactForm (eventChangeReact)="currentReact = $event"></app-react-form>
+  <button (mouseover)="reactForm.isShow = true">{{currentReact}}</button>
+</div>
