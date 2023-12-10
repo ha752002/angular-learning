@@ -1,0 +1,20 @@
+<!--<ng-container [ngTemplateOutlet]="test" [ngTemplateOutletContext]="{list: productList}">-->
+<!--  <p>dadlkdasdka</p>-->
+<!--</ng-container>-->
+<!--<ng-container [ngTemplateOutlet]="test" [ngTemplateOutletContext]="{list: productList2}"></ng-container>-->
+
+<!--<ng-template #test let-a="list">-->
+<!--  <ng-template-->
+<!--    ngFor [ngForOf]="a" let-product-->
+<!--  >-->
+<!--    <app-product-detail [product]="product"></app-product-detail>-->
+<!--  </ng-template>-->
+<!--</ng-template>-->
+<ng-container [ngTemplateOutlet]="test"></ng-container>
+<ng-template #test>
+  <ng-template
+    ngFor
+    [ngForOf]="productList"
+    let-product>
+    <app-product-detail [product]="product"></app-product-detail>
+</ng-template>
