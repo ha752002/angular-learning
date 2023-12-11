@@ -1,0 +1,28 @@
+<div *ngIf="loginForm">
+  <form [formGroup]="loginForm!" (ngSubmit)="onSubmit()" class="row justify-content-md-center form-group">
+    <p>FORM LOGIN</p>
+    <div>
+      <label for="name">Name : </label>
+      <input formControlName="contactName"  id="name">
+      <p *ngIf="loginForm.controls['contactName']?.touched && loginForm.controls['contactName']?.errors" >định dạng phải là 3 kí tự trở lên </p>
+    </div>
+    <div>
+      <label for="email">Email : </label>
+      <input formControlName="email" id="email">
+      <p *ngIf="loginForm.controls['email']?.touched && loginForm.controls['email']?.errors" >định dạng phải là email</p>
+
+    </div>
+    <div>
+      <label for="phone">Phone : </label>
+      <input formControlName="tel" id="phone">
+      <p *ngIf="loginForm.controls['tel']?.touched && loginForm.controls['tel']?.errors">định dạng phải là số và phải có 10 kí tự</p>
+
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+<div>
+  <p>afioahnfsouanisf</p>
+</div>
