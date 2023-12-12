@@ -1,0 +1,8 @@
+<ng-template
+  ngFor
+  [ngForOf]="courseList"
+  let-course
+  let-index=index
+>
+  <app-color-row [course]="course" [index]="index" [lastIndex]="courseList.length - 1"></app-color-row>
+</ng-template>
