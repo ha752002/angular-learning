@@ -1,0 +1,9 @@
+<div>
+  <select #spaceSelect  (change)="onClickSpace(spaceSelect.value)" class="form-select" aria-label="Default select example">
+    <option selected>Choose Space</option>
+        <ng-template  ngFor [ngForOf]="chooseSpaceList" let-space let-index=index>
+          <option  [value]="space" >{{space}} space</option>
+        </ng-template>
+  </select>
+</div>
+

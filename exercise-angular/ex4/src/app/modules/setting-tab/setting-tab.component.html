@@ -1,0 +1,12 @@
+<div>
+  <h1>FORM SETTING TAB</h1>
+  <div class="form-setting-tab">
+    <div class="button-group">
+      <app-button-setting-tab (changeClickSpace)="resultContent.numberSpacePerTab = +$event" class="button-item"></app-button-setting-tab>
+      <app-button-copy-content  class="button-item"></app-button-copy-content>
+    </div>
+    <div>
+      <app-result-content #resultContent ></app-result-content>
+    </div>
+  </div>
+</div>
