@@ -1,0 +1,33 @@
+<router-outlet></router-outlet>
+<form [formGroup]="form">
+  <app-input formControlName="phoneNumber"></app-input>
+</form>
+
+<button (click)="handleClickButton()">modal-1</button>
+
+
+<jw-modal key="modal-1">
+  <p>modal-1</p>
+</jw-modal>
+
+<jw-modal key="modal-2">
+  <p>modal-1</p>
+</jw-modal>
+
+<!--Header-->
+<mat-toolbar-row color="warn">
+  <p>header</p>
+</mat-toolbar-row>
+
+<mat-sidenav-container>
+  <p>jsjsjssj</p>
+  <!--Sidebar-->
+  <mat-sidenav position="start" mode="side">
+    <p>hehehehe</p>
+  </mat-sidenav>
+
+  <!--Main content-->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
